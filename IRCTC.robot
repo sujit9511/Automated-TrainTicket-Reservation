@@ -24,6 +24,7 @@ Search Details
     Input Text    locator=//*[@id="jDate"]/span/input    text=18/12/2023
     Sleep    time_=1
     Press Keys    //*[@id="jDate"]/span/input    ENTER
+    Sleep    time_=1
 
 Select Train
     Sleep    time_=2
