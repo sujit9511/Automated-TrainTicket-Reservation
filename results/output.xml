@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.1 on win32)" generated="20231031 17:56:28.570" rpa="false" schemaversion="4">
+<suite id="s1" name="RobotFrameWork Learning" source="C:\Users\great\Desktop\Learn\RobotFrameWork Learning">
+<suite id="s1-s1" name="Automation IRCTC" source="C:\Users\great\Desktop\Learn\RobotFrameWork Learning\Automation IRCTC">
+<suite id="s1-s1-s1" name="IRCTC" source="C:\Users\great\Desktop\Learn\RobotFrameWork Learning\Automation IRCTC\IRCTC.robot">
+<test id="s1-s1-s1-t1" name="Open Browser and Url" line="10">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=${url}</arg>
+<arg>browser=edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231031 17:56:28.895" level="INFO">Opening browser 'edge' to base url 'https://www.irctc.co.in/nget/train-search'.</msg>
+<status status="PASS" starttime="20231031 17:56:28.893" endtime="20231031 17:56:42.560"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231031 17:56:42.561" endtime="20231031 17:56:42.692"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>time_=1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231031 17:56:43.692" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231031 17:56:42.692" endtime="20231031 17:56:43.692"/>
+</kw>
+<status status="PASS" starttime="20231031 17:56:28.891" endtime="20231031 17:56:43.692"/>
+</test>
+<test id="s1-s1-s1-t2" name="Search Details" line="15">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=//*[@id="origin"]/span/input</arg>
+<arg>text=Pune</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231031 17:56:43.692" level="INFO">Typing text 'Pune' into text field '//*[@id="origin"]/span/input'.</msg>
+<status status="PASS" starttime="20231031 17:56:43.692" endtime="20231031 17:56:43.887"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//*[@id="origin"]/span/input</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20231031 17:56:43.890" level="INFO">Sending key(s) ('ENTER',) to //*[@id="origin"]/span/input element.</msg>
+<msg timestamp="20231031 17:56:44.191" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20231031 17:56:44.192" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20231031 17:56:43.888" endtime="20231031 17:56:44.217"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=//*[@id="destination"]/span/input</arg>
+<arg>text=Solapur</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231031 17:56:44.219" level="INFO">Typing text 'Solapur' into text field '//*[@id="destination"]/span/input'.</msg>
+<status status="PASS" starttime="20231031 17:56:44.217" endtime="20231031 17:56:44.410"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//*[@id="destination"]/span/input</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20231031 17:56:44.410" level="INFO">Sending key(s) ('ENTER',) to //*[@id="destination"]/span/input element.</msg>
+<msg timestamp="20231031 17:56:44.734" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20231031 17:56:44.734" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20231031 17:56:44.410" endtime="20231031 17:56:44.742"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//*[@id="jDate"]/span/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231031 17:56:44.742" level="INFO">Clicking element '//*[@id="jDate"]/span/input'.</msg>
+<status status="PASS" starttime="20231031 17:56:44.742" endtime="20231031 17:56:44.884"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//*[@id="jDate"]/span/input</arg>
+<arg>CTRL+A</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20231031 17:56:44.886" level="INFO">Sending key(s) ('CTRL+A',) to //*[@id="jDate"]/span/input element.</msg>
+<msg timestamp="20231031 17:56:45.183" level="INFO">Pressing special key CONTROL down.</msg>
+<msg timestamp="20231031 17:56:45.184" level="INFO">Sending key A</msg>
+<msg timestamp="20231031 17:56:45.184" level="INFO">Releasing special key CONTROL.</msg>
+<status status="PASS" starttime="20231031 17:56:44.885" endtime="20231031 17:56:45.199"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>time_=1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231031 17:56:46.200" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231031 17:56:45.199" endtime="20231031 17:56:46.200"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//*[@id="jDate"]/span/input</arg>
+<arg>BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20231031 17:56:46.200" level="INFO">Sending key(s) ('BACKSPACE',) to //*[@id="jDate"]/span/input element.</msg>
+<msg timestamp="20231031 17:56:46.476" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20231031 17:56:46.476" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20231031 17:56:46.200" endtime="20231031 17:56:46.495"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=//*[@id="jDate"]/span/input</arg>
+<arg>text=13/12/2023</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231031 17:56:46.495" level="INFO">Typing text '13/12/2023' into text field '//*[@id="jDate"]/span/input'.</msg>
+<status status="PASS" starttime="20231031 17:56:46.495" endtime="20231031 17:56:46.665"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>time_=1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231031 17:56:47.667" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231031 17:56:46.666" endtime="20231031 17:56:47.667"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//*[@id="jDate"]/span/input</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20231031 17:56:47.669" level="INFO">Sending key(s) ('ENTER',) to //*[@id="jDate"]/span/input element.</msg>
+<msg timestamp="20231031 17:56:47.961" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20231031 17:56:47.962" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20231031 17:56:47.668" endtime="20231031 17:56:47.983"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>time_=1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231031 17:56:48.985" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231031 17:56:47.983" endtime="20231031 17:56:48.985"/>
+</kw>
+<status status="PASS" starttime="20231031 17:56:43.692" endtime="20231031 17:56:48.986"/>
+</test>
+<test id="s1-s1-s1-t3" name="Select Train LTT VSKP EXPRESS 3A" line="29">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//*[@id="divMain"]/div/app-train-list/div[4]/div/div[5]/div[3]/div[1]/app-train-avl-enq/div[1]/div[5]/div[1]/table/tr/td[2]/div/div[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231031 17:56:48.990" level="INFO">Clicking element '//*[@id="divMain"]/div/app-train-list/div[4]/div/div[5]/div[3]/div[1]/app-train-avl-enq/div[1]/div[5]/div[1]/table/tr/td[2]/div/div[2]'.</msg>
+<status status="PASS" starttime="20231031 17:56:48.989" endtime="20231031 17:56:49.078"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>time_=1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231031 17:56:50.081" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231031 17:56:49.079" endtime="20231031 17:56:50.081"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//*[@id="divMain"]/div/app-train-list/div[4]/div/div[5]/div[3]/div[1]/app-train-avl-enq/div[1]/div[7]/div[1]/div[3]/table/tr/td[2]/div/div[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231031 17:56:50.083" level="INFO">Clicking element '//*[@id="divMain"]/div/app-train-list/div[4]/div/div[5]/div[3]/div[1]/app-train-avl-enq/div[1]/div[7]/div[1]/div[3]/table/tr/td[2]/div/div[2]'.</msg>
+<status status="PASS" starttime="20231031 17:56:50.082" endtime="20231031 17:56:50.337"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>time_=1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231031 17:56:51.339" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231031 17:56:50.338" endtime="20231031 17:56:51.339"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollBy(0,100)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20231031 17:56:51.341" level="INFO">Executing JavaScript:
+window.scrollBy(0,100)
+Without any arguments.</msg>
+<status status="PASS" starttime="20231031 17:56:51.340" endtime="20231031 17:56:51.348"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>time_=2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231031 17:56:53.349" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231031 17:56:51.349" endtime="20231031 17:56:53.349"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>locator=//*[@id="divMain"]/div/app-train-list/div[4]/div/div[5]/div[3]/div[1]/app-train-avl-enq/div[2]/div/span/span[1]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231031 17:56:53.349" level="INFO">Clicking button '//*[@id="divMain"]/div/app-train-list/div[4]/div/div[5]/div[3]/div[1]/app-train-avl-enq/div[2]/div/span/span[1]/button'.</msg>
+<status status="PASS" starttime="20231031 17:56:53.349" endtime="20231031 17:56:53.519"/>
+</kw>
+<status status="PASS" starttime="20231031 17:56:48.988" endtime="20231031 17:56:53.521"/>
+</test>
+<test id="s1-s1-s1-t4" name="Sign In" line="41">
+<kw name="Sleep" library="BuiltIn">
+<arg>time_=30</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231031 17:57:23.528" level="INFO">Slept 30 seconds</msg>
+<status status="PASS" starttime="20231031 17:56:53.527" endtime="20231031 17:57:23.528"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>locator=//*[@id="login_header_disable"]/div/div/div[2]/div[2]/div/div[2]/div[2]/div[2]/form/span/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231031 17:57:23.528" level="INFO">Clicking button '//*[@id="login_header_disable"]/div/div/div[2]/div[2]/div/div[2]/div[2]/div[2]/form/span/button'.</msg>
+<status status="PASS" starttime="20231031 17:57:23.528" endtime="20231031 17:57:23.643"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>time_=5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231031 17:57:28.643" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231031 17:57:23.643" endtime="20231031 17:57:28.643"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231031 17:57:28.643" endtime="20231031 17:57:31.007"/>
+</kw>
+<status status="PASS" starttime="20231031 17:56:53.525" endtime="20231031 17:57:31.008"/>
+</test>
+<status status="PASS" starttime="20231031 17:56:28.618" endtime="20231031 17:57:31.010"/>
+</suite>
+<status status="PASS" starttime="20231031 17:56:28.613" endtime="20231031 17:57:31.013"/>
+</suite>
+<status status="PASS" starttime="20231031 17:56:28.577" endtime="20231031 17:57:31.015"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="RobotFrameWork Learning">RobotFrameWork Learning</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1" name="Automation IRCTC">RobotFrameWork Learning.Automation IRCTC</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1-s1" name="IRCTC">RobotFrameWork Learning.Automation IRCTC.IRCTC</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
